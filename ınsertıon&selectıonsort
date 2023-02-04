@@ -1,3 +1,4 @@
+"""
 [22,27,16,2,18,6] -> Insertion Sort
 Insertıon Sort
 Sıralama ındex 1 den başlamamızı
@@ -6,13 +7,27 @@ Maddelerdeki örüntü gibi sıralayarak gidilir. Kendinden bir öncekine göre 
 her sayı için kendinden sonraki sayı büyük olduğundan solundaki boşluğa yazılarak sıralanır. örn. {2,3,5,7,11}
 App:
 Sade hali {22,27,16,2,18,6}
-ındex #1 {22,27,16,2,18,6} 1.eleman kontrol edildi ve öncesinde kıyaslanacak eleman yoktu.
-ındex #2 {22,27,16,2,18,6} 2.eleman zaten bir öncekinden büyük olduğu için aynı kaldı.
-ındex #3 {16,22,27,2,18,6} 3.eleman kendinden önceki sayıların hepsinden küçük olduğu için en başa geldi.
-ındex #4 {2,16,22,27,18,6} 4.eleman da kendinen öncekilerin hepsi büyük olduğu için başa geldi.
-ındex #5 {2,16,18,22,27,6} 5.eleman 16 ve 22 sayısının arasına yerleşti.
-ındex #6 {2,6,16,18,22,27} 6.eleman 2 ve 16 sayıları arasına yerleşti.
+ındex #1  {22,27,16,2,18,6} 1.eleman kontrol edildi ve öncesinde kıyaslanacak eleman yoktu.
+ındex #2  {22,27,16,2,18,6} 2.eleman zaten bir öncekinden büyük olduğu için aynı kaldı.
+ındex #3  {16,22,27,2,18,6} 3.eleman kendinden önceki sayıların hepsinden küçük olduğu için en başa geldi.
+ındex #4  {2,16,22,27,18,6} 4.eleman da kendinen öncekilerin hepsi büyük olduğu için başa geldi.
+ındex #5  {2,16,18,22,27,6} 5.eleman 16 ve 22 sayısının arasına yerleşti.
+ındex #6  {2,6,16,18,22,27} 6.eleman 2 ve 16 sayıları arasına yerleşti.
 Temelde ne kadar eleman varsa o kadar işlem yapılacaktır.
 Big-O Notatıon O(n^2) olarak heasplanmıştır.
+TİME COMPLEXITY: 18 elemanı, son elemanlardan biri olduğu için worst case durumundadır.
+"""
+"""
 [7,3,5,8,2,9,4,15,6] -> Selection Sort
-Sade
+App:
+Sade hali {7,3,5,8,2,9,4,15,6}
+ındex #1  {2,3,5,8,7,9,4,15,6} 1.eleman tüm sayıları gezer ve en küçük elemanla yer değiştirir.
+ındex #2  {2,3,5,8,7,9,4,15,6} Aynı kalıyor çünkü 
+ındex #3  {2,3,4,8,7,9,5,15,6} 5 geziyor ve kendinden küçük 4 ile yer değiştiriyor.
+ındex #4  {2,3,4,5,7,9,8,15,6} 8 5i buluyor ve yer değiştiriyor.
+ındex #5  {2,3,4,5,6,9,8,15,7} 7 > 6 
+ındex #6  {2,3,4,5,6,7,8,15,9} 9 7 ile yer değiştiriyor.
+ındex #7  {2,3,4,5,6,7,8,15,9} seri aynı kalıyor çünkü 8 en küçük sayı.
+ındex #8  {2,3,4,5,6,7,8,9,15} 15  de en büyük sayımız olduğu için 9 ile yer değiştiriyor.
+ındex #9  {2,3,4,5,6,7,8,9,15} dizimiz artık nihayete erdi ve büyükten küçüğe sıralandı.
+"""
