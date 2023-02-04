@@ -1,0 +1,22 @@
+[16,21,11,8,12,22] -> Merge Sort
+Merge sortta yapılan ayırmak ve tek eleman kalana kadar parçalamak. elemanları ayırıyoruz..
+
+                           {16,21,11}         >>><<<<       {8,12,22}
+                             /   \                            /   \
+                            /     \                          /     \
+                         {16}   {21,11}                    {8}    {12,22}
+                          /       /    \                   /       /    \
+                       {16}    {21}    {11}              {8}     {12}   {22}
+                        /         \    /                 /         \     /
+                       {16}       {11,21}               {8}        {12,22}
+                        \           /                    \           /
+                         \         /                      \         /
+                          {11,16,21}                        {8,12,22}
+                                   \                       /
+                                     \                   /
+                                       \               /
+                                       {8,11,12,16,21,22}
+                                       
+Merge sort her seferinde ikiye bölünerek sıralandığı için Big - O Notation O(n*log(n)) olarak karşımıza çıkıyor.
+
+www.patika.dev
